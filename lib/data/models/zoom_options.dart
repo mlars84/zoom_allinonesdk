@@ -5,7 +5,7 @@ class ZoomOptions {
 
   String? clientId;
 
-  String? clientSecert;
+  String? clientSecret;
 
   /// --JWT token for web / iOS / Android
   String? jwtSignature;
@@ -37,7 +37,7 @@ class ZoomOptions {
   ZoomOptions(
       {required this.domain,
       required this.clientId,
-      required this.clientSecert,
+      required this.clientSecret,
       this.jwtSignature,
       this.language = "en-US",
       this.showMeetingHeader = true,

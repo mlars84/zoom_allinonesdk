@@ -85,7 +85,7 @@ class _JoinMeetingScreenState extends State<JoinMeetingScreen> {
     ZoomOptions zoomOptions = new ZoomOptions(
       domain: "zoom.us",
       clientId: configs["MEETING_SDK_CLIENT_KEY"],
-      clientSecert: configs["MEETING_SDK_CLIENT_SECRET"],
+      clientSecret: configs["MEETING_SDK_CLIENT_SECRET"],
       language: "en-US", // Optional - For Web
       showMeetingHeader: true, // Optional - For Web
       disableInvite: false, // Optional - For Web
@@ -120,7 +120,7 @@ class _JoinMeetingScreenState extends State<JoinMeetingScreen> {
     ZoomOptions zoomOptions = new ZoomOptions(
       domain: "zoom.us",
       clientId: configs["MEETING_SDK_CLIENT_KEY"],
-      clientSecert: configs["MEETING_SDK_CLIENT_SECRET"],
+      clientSecret: configs["MEETING_SDK_CLIENT_SECRET"],
     );
     var meetingOptions = MeetingOptions(
         displayName: "", meetingId: meetingId, meetingPassword: password);

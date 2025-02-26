@@ -64,7 +64,7 @@ class FlutterZoomWeb extends ZoomAllInOneSdkPlatform {
 
     String jwtSignature = jwtGenerator.generate(
         key: zoomoptions.clientId ?? "",
-        secret: zoomoptions.clientSecert ?? "",
+        secret: zoomoptions.clientSecret ?? "",
         meetingId: int.tryParse(meetingOptions.meetingId ?? "") ?? 0,
         role: meetingOptions.userType ?? "1");
 
@@ -110,7 +110,7 @@ class FlutterZoomWeb extends ZoomAllInOneSdkPlatform {
     final Completer<bool> completer = Completer();
     String jwtSignature = jwtGenerator.generate(
         key: zoomoptions.clientId ?? "",
-        secret: zoomoptions.clientSecert ?? "",
+        secret: zoomoptions.clientSecret ?? "",
         meetingId: int.tryParse(meetingOptions.meetingId ?? "") ?? 0,
         role: meetingOptions.userType ?? "0");
     ZoomMtg.join(JoinParams(
